@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AVC J.College Photos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #041c24;
+            color: #b7995b;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #b7995b;
+            color: #041c24;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #d3b37d;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>AVC J.College Photo Gallery</h1>
+
+    <div class="gallery">
+         <img src="college.jpg" alt="C:\Users\Pratish Nigam\Desktop\tiya html">
+        <img src="Garden.jpg" alt="C:\Users\Pratish Nigam\Desktop\tiya html">
+        <img src="Classroom.jpg" alt="C:\Users\Pratish Nigam\Desktop\tiya html">
+        <img src="Ground.jpg" alt="C:\Users\Pratish Nigam\Desktop\tiya html">
+        <img src="Library.jpg" alt="C:\Users\Pratish Nigam\Desktop\tiya html">
+        <img src="auditorium.jpg" alt="C:\Users\Pratish Nigam\Desktop\tiya html">
+    </div>
+
+    <a href="#" class="back-btn" id="goBack">Go Back</a>
+
+    <script>
+        // Get the current query parameters
+        const queryString = window.location.search;
+
+        // Update the "Go Back" button's href to include the original parameters
+        const backButton = document.getElementById('goBack');
+        backButton.href = "slay.html" + queryString;
+    </script>
+</body>
+</html>
+
+	
+
+
+
+

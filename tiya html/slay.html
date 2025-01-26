@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AVC J.College Optional Subject Form</title>
+    <style>
+        body {
+            background-color: #041c24;
+            color: #b7995b;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header img {
+            margin-right: 20px; /* Space between the image and the text */
+        }
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 30px;
+        }
+        label {
+            margin-left: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            margin-top: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .inline {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="College Logo" width="200" height="150">
+        <h1>AVC J.College Optional Subject Form</h1>
+    </div>
+
+    <h3>Use of Form</h3>
+    <form action="cocomelon.html" method="GET">
+        <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" maxlength="20" required>
+        </div>
+
+        <div class="form-group">
+            <label>Enter your standard:</label><br><br>
+            <div class="inline">
+                <input type="radio" id="standard11" name="standard" value="11" required>
+                <label for="standard11">11<sup>th</sup></label>
+            </div>
+            <div class="inline">
+                <input type="radio" id="standard12" name="standard" value="12">
+                <label for="standard12">12<sup>th</sup></label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Choose your optional subjects:</label><br><br>
+            <div class="inline">
+               <input type="checkbox" id="hindi" name="subjects" value="Hindi">
+                <label for="hindi">Hindi</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="german" name="subjects" value="German">
+                <label for="german">German</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="biology" name="subjects" value="Biology">
+                <label for="biology">Biology</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="it" name="subjects" value="IT">
+                <label for="it">IT</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
